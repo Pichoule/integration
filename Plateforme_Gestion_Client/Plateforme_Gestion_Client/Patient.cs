@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Plateforme_Gestion_Client
+namespace integrationToka.Integrationjenkins
 {
     class Patient
     {
-        protected enum Genre { F, M };
+        public enum Genre { F, M };
 
         protected string Nom;
         protected string Prenom;
@@ -17,7 +17,6 @@ namespace Plateforme_Gestion_Client
 
         protected string Pathologie;
         protected DateTime DerniereVisite;
-
 
         public Patient(string nom, string prenom, Genre sexe, string pathologie, DateTime lastVisite)
         {
@@ -85,5 +84,5 @@ namespace Plateforme_Gestion_Client
             NumSecu += rnd.Next(10000000, 99999999).ToString();
         }
     }
-}
 
+}

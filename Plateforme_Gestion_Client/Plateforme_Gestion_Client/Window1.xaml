@@ -6,19 +6,35 @@
         xmlns:local="clr-namespace:Plateforme_Gestion_Client"
         xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="Plateforme_Gestion_Client.Window1"
         mc:Ignorable="d"
-        Title="Page d'accueil infirmière" Height="350" Width="500" Background="#FF8A8787">
+        Title="Page d'accueil infirmière" Height="Auto" Width="Auto" Background="Gray">
     <Grid>
-        <Rectangle Fill="White" HorizontalAlignment="Left" Height="33" Margin="124,83,0,0" Stroke="Black" VerticalAlignment="Top" Width="188"/>
-        <Label x:Name="Tableau_client" Content="Tableau de clients" HorizontalAlignment="Left" Height="33" Margin="163,83,0,0" VerticalAlignment="Top" Width="117"/>
-        <Rectangle Fill="White" HorizontalAlignment="Left" Height="29" Margin="22,20,0,0" Stroke="Black" VerticalAlignment="Top" Width="182"/>
-        <Label x:Name="Bienvenue" Content="Bienvenue Mme ... " HorizontalAlignment="Left" Height="29" Margin="59,20,0,0" VerticalAlignment="Top" Width="120"/>
-        <StackPanel HorizontalAlignment="Left" Height="145.548" Margin="123.55,137.84,0,0" VerticalAlignment="Top" Width="224">
-            <Button x:Name="Client1" Content="Client 1" Height="34.08" VerticalAlignment="Top" HorizontalAlignment="Left" Width="175.812" Click="Client1_Click" Background="White"/>
-            <Button x:Name="Client2" Content="Client 2" Height="34.08" VerticalAlignment="Top" HorizontalAlignment="Left" Width="175.812" Click="Client2_Click" Background="White"/>
-            <Button Content="Button" HorizontalAlignment="Left" Height="34" Width="175"/>
-        </StackPanel>
-        <Button Content="Déconnexion" HorizontalAlignment="Left" Height="29" Margin="219,20,0,0" VerticalAlignment="Top" Width="81" Background="White" BorderThickness="1" Click="Deconnexion"/>
-        <Button Content="Supprimer" HorizontalAlignment="Left" Margin="322,142,0,155.5" Width="66" Click="Supprimer1" Background="White"/>
-        <Button Content="Supprimer" HorizontalAlignment="Left" Margin="322,180,0,118.5" Width="66" Click="Supprimer2" Background="White"/>
+        <Label Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="4" x:Name="Bienvenue" Content="Bienvenue Mme NomInfirmière " Background="White" VerticalContentAlignment="Center" Margin="0,0.5,92.5,8" />
+        <Label Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="3" x:Name="Tableau_client" Content="Tableau de clients" Background="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="79,0,0.5,0.5" />
+        <Button Grid.Row="2" Grid.Column="1" Content="Déconnexion" Click="Deconnexion" Background="White" Margin="0,10,22,6"/>
+        <Button Grid.Row="5" Grid.Column="2" x:Name="Client1" Content="Client 1" Click="Client1_Click" Background="White" Grid.ColumnSpan="3" Margin="79,0.5,92.5,0" />
+        <Button Grid.Row="5" Grid.Column="4" Content="Supprimer" Click="Supprimer1" Background="White" Margin="2.5,0.5,0.5,0" />
+        <Button Grid.Row="6" Grid.Column="2" x:Name="Client2" Content="Client 2" Click="Client2_Click" Background="White" Grid.ColumnSpan="3" Margin="79,0,92.5,0" />
+        <Button Grid.Row="6" Grid.Column="4" Content="Supprimer" Click="Supprimer2" Background="White" Margin="2.5,0,0.5,0" />
+
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80*" />
+            <RowDefinition Height="47*" />
+            <RowDefinition Height="42*" />
+            <RowDefinition Height="57*" />
+            <RowDefinition Height="57*" />
+            <RowDefinition Height="57*" />
+            <RowDefinition Height="57*" />
+            <RowDefinition Height="56*" />
+            <RowDefinition Height="57*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="91*" />
+            <ColumnDefinition Width="122*" />
+            <ColumnDefinition Width="80*" />
+            <ColumnDefinition Width="79*" />
+            <ColumnDefinition Width="105*" />
+            <ColumnDefinition Width="287*" />
+        </Grid.ColumnDefinitions>
     </Grid>
 </Window>

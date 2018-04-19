@@ -5,15 +5,35 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Plateforme_Gestion_Client"
         mc:Ignorable="d"
-        Title="Page de connexion" Width="500" Height="350">
-    <Grid Background="#FF8A8787">
-        <Button x:Name="Connexion" Content="Connexion" Margin="171,176,0,0" Height="34" VerticalAlignment="Top" HorizontalAlignment="Left" Width="142" Click="Connexion_Click" Background="White"/>
-        <PasswordBox x:Name="Password" HorizontalAlignment="Left" Height="32" Margin="171,130,0,0" VerticalAlignment="Top" Width="142" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-        <TextBox x:Name="Login" HorizontalAlignment="Left" Height="32" Margin="171,94,0,0" TextWrapping="Wrap" Text="Login" VerticalAlignment="Top" Width="142" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-        <Rectangle Fill="White" HorizontalAlignment="Left" Height="45" Margin="151.458,29.125,0,0" Stroke="Black" VerticalAlignment="Top" Width="175.812"/>
-        <Label Content="Gestion des clients" HorizontalAlignment="Left" Height="27" Margin="183.375,38.125,0,0" VerticalAlignment="Top" Width="118.5" FontWeight="Bold"/>
-        <Button x:Name="enregistrement" Content="Inscrivez vous en &#xD;&#xA;cliquant ici" Margin="171,270,0,0" Height="38" VerticalAlignment="Top" HorizontalAlignment="Left" Width="142" Click="PageInscription" Background="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
-        <Button Content="Mot de passe oublié ?" HorizontalAlignment="Left" Height="38" Margin="171,227,0,0" VerticalAlignment="Top" Width="142" Background="White" Click="MdpOublie"/>
+        Title="Page de connexion" Width="Auto" Height="Auto">
+    <Grid Background="Gray">
+        
+        <Label Grid.Row="1" Grid.Column="1" x:Name="NomAppli" Content="Gestion des clients" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="White" />
+        <TextBox Grid.Row="3" Grid.Column="1" x:Name="Login" Text="Login" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <PasswordBox Grid.Row="4" Grid.Column="1" x:Name="Password" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <Button Grid.Row="6" Grid.Column="1" x:Name="Connexion" Content="Connexion" Click="Connexion_Click" Background="White" />
+        <Button Grid.Row="8" Grid.Column="1" x:Name="mdpOublie" Content="Mot de passe oublié ?" Click="MdpOublie" Background="White"/>
+        <Button Grid.Row="9" Grid.Column="1" x:Name="enregistrement" Content="Inscrivez vous en cliquant ici" Click="PageInscription" Background="White" />
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
 
     </Grid>
 </Window>

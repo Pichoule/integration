@@ -10,11 +10,11 @@
 
         <Label Content="Gestion des clients - Mot de passe oublié" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Background="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
         <Label Content="Entrez votre adresse mail : " Grid.Row="3" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="White"/>
-        <Label Content="" Grid.Row="3" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="White"/>
+        <TextBox Grid.Row="3" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="White"/>
         <Label Content="Tapez votre nouveau mot de passe : " Grid.Row="5" Grid.Column="1" Background="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-        <Label Content="" Grid.Row="5" Grid.Column="2" Background="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox Grid.Row="5" Grid.Column="2" Background="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
         <Label Content="Tapez à nouveau votre mot de passe : " Grid.Row="6" Grid.Column="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="White"/>
-        <Label Content="" Grid.Row="6" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="White"/>
+        <TextBox Grid.Row="6" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="White"/>
 
 
         <Grid.RowDefinitions>

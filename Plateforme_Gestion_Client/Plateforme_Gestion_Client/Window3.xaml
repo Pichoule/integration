@@ -8,17 +8,20 @@
         Title="Page_Enregistrement" Height="Auto" Width="Auto">
     <Grid Background="Gray">
         <Label Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Content="Gestion des clients - Inscription Infirmière " Background="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
-        <TextBox Grid.Row="3" Grid.Column="2" x:Name="Enregistrement_Nom" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
         <Label Grid.Row="3" Grid.Column="1" Content="Nom :" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="White" />
-        <TextBox Grid.Row="4" Grid.Column="2" x:Name="Enregistrement_Prenom" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <TextBox Grid.Row="3" Grid.Column="2" x:Name="Enregistrement_Nom" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
         <Label Grid.Row="4" Grid.Column="1" Content="Prénom :" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="White" />
-        <TextBox Grid.Row="5" Grid.Column="2" x:Name="Enregistrement_Login" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
-        <Label Grid.Row="5" Grid.Column="1" Content="Login :" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="White" />
-        <PasswordBox Grid.Row="6" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-        <Label Grid.Row="6" Grid.Column="1" Content="Password :" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="White" />
-        <Button Grid.Row="8" Grid.Column="1" Grid.ColumnSpan="2" Content="S'inscrire" Click="Inscription" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="White"/>
+        <TextBox Grid.Row="4" Grid.Column="2" x:Name="Enregistrement_Prenom" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <Label Grid.Row="5" Grid.Column="1" Content="Email" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="White" />
+        <TextBox Grid.Row="5" Grid.Column="2" x:Name="Enregistrement_Email" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <Label Grid.Row="6" Grid.Column="1" Content="Login :" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="White" />
+        <TextBox Grid.Row="6" Grid.Column="2" x:Name="Enregistrement_Login" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <Label Grid.Row="7" Grid.Column="1" Content="Password :" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="White" />
+        <PasswordBox Grid.Row="7" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Button Grid.Row="9" Grid.Column="1" Grid.ColumnSpan="2" Content="S'inscrire" Click="Inscription" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="White"/>
 
         <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />

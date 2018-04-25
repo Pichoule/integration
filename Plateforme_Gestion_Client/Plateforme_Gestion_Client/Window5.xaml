@@ -6,9 +6,33 @@
         xmlns:local="clr-namespace:Plateforme_Gestion_Client"
         mc:Ignorable="d"
         Title="Affectation client" Height="Auto" Width="Auto">
-    <Grid Background="Gray">
+    <Grid Background="#FFB3B3B3">
+
+        <Label Content="Gestion des clients - Création et affectation de client" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Background="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label Content="Nom du nouveau client :" Grid.Row="3" Grid.Column="1" Background="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox Grid.Row="3" Grid.Column="2" x:Name="Nouveau_Nom" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <Label Content="Prénom du nouveau client :" Grid.Row="4" Grid.Column="1" Background="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox Grid.Row="4" Grid.Column="2" x:Name="Nouveau_Prenom" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <Label Content="N°Sécu :" Grid.Row="5" Grid.Column="1" Background="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox Grid.Row="5" Grid.Column="2" x:Name="Nouveau_NumSecu" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <Label Content="Pathologie :" Grid.Row="6" Grid.Column="1" Background="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox Grid.Row="6" Grid.Column="2" x:Name="Nouveau_Pathologie" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <Label Content="Date de première visite :" Grid.Row="7" Grid.Column="1" Background="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox Grid.Row="7" Grid.Column="2" x:Name="Nouveau_DateVisite" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <Label Content="Affecter client à :" Grid.Row="8" Grid.Column="1" Background="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <ComboBox Grid.Row="8" Grid.Column="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="White" BorderBrush="{x:Null}">
+            <ComboBoxItem>Infirmière 1</ComboBoxItem>
+            <ComboBoxItem>Infirmière 2</ComboBoxItem>
+            <ComboBoxItem>Infirmière 3</ComboBoxItem>
+            <ComboBoxItem>Infirmière 4</ComboBoxItem>
+        </ComboBox>
+        <Button Grid.Row="10" Grid.Column="1" Grid.ColumnSpan="2" Content="Créer client" Click="Creation_client" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="White"/>
 
         <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />
@@ -24,9 +48,6 @@
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
-
-        <Label Content="Gestion des clients - Création et affectation de client" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Background="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-
 
     </Grid>
 </Window>

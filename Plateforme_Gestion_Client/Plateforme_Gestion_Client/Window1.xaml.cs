@@ -30,7 +30,6 @@ namespace Plateforme_Gestion_Client
             Window2 wnd = new Window2();
             //wnd.Show();
             wnd.ShowDialog();
-            
         }
 
         private void Client2_Click(object sender, RoutedEventArgs e)
@@ -48,7 +47,7 @@ namespace Plateforme_Gestion_Client
 
         private void Supprimer1(object sender, RoutedEventArgs e)
         {
-
+         
         }
 
         private void Supprimer2(object sender, RoutedEventArgs e)

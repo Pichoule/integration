@@ -26,7 +26,7 @@ namespace Plateforme_Gestion_Client
 
         private void Inscription(object sender, RoutedEventArgs e)
         {
-
+            // Enregistrement de l'infirmière en BDD ?
         }
     }
 }

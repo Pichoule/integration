@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Plateforme_Gestion_Client"
         mc:Ignorable="d"
         Title="Page_Enregistrement" Height="Auto" Width="Auto">
-    <Grid Background="Gray">
+    <Grid Background="#FFB3B3B3">
         <Label Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Content="Gestion des clients - Inscription Infirmière " Background="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
         <Label Grid.Row="3" Grid.Column="1" Content="Nom :" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="White" />
         <TextBox Grid.Row="3" Grid.Column="2" x:Name="Enregistrement_Nom" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />

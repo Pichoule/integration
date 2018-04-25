@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Plateforme_Gestion_Client"
         mc:Ignorable="d"
         Title="Page de connexion" Width="Auto" Height="Auto">
-    <Grid Background="Gray">
+    <Grid Background="#FFB3B3B3">
         
         <Label Grid.Row="1" Grid.Column="1" x:Name="NomAppli" Content="Gestion des clients" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="White" />
         <TextBox Grid.Row="3" Grid.Column="1" x:Name="Login" Text="Login" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
@@ -14,7 +14,8 @@
         <Button Grid.Row="6" Grid.Column="1" x:Name="Connexion" Content="Connexion" Click="Connexion_Click" Background="White" />
         <Button Grid.Row="8" Grid.Column="1" x:Name="mdpOublie" Content="Mot de passe oublié ?" Click="MdpOublie" Background="White"/>
         <Button Grid.Row="9" Grid.Column="1" x:Name="enregistrement" Content="Inscrivez vous en cliquant ici" Click="PageInscription" Background="White" />
-        
+        <Button Grid.Row="6" Grid.Column="2" x:Name="Affectation" Content="Affecter des clients" Click="Affectation_Click" Width="200" Background="White" />
+
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />

@@ -23,5 +23,10 @@ namespace Plateforme_Gestion_Client
         {
             InitializeComponent();
         }
+
+        private void NouveauMdp(object sender, RoutedEventArgs e)
+        {
+            // Enregistrement du mdp en BDD ?
+        }
     }
 }

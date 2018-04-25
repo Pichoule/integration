@@ -23,5 +23,10 @@ namespace Plateforme_Gestion_Client
         {
             InitializeComponent();
         }
+
+        private void Creation_client(object sender, RoutedEventArgs e)
+        {
+            //Création du client en BDD ?
+        }
     }
 }

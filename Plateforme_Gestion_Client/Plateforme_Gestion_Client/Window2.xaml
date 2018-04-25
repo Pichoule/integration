@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Plateforme_Gestion_Client"
         mc:Ignorable="d"
         Title="Infos client" Height="Auto" Width="Auto" Background="Gray">
-    <Grid>
+    <Grid Background="#FFB3B3B3">
         <Label Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" x:Name="Infos" Content="Informations sur Mr / Mme ..." HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="White" />
         <Label Grid.Row="3" Grid.Column="1" Content="Nom :" Background="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
         <Label Grid.Row="3" Grid.Column="2" x:Name="nomPatient" Content="" Background="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
@@ -17,7 +17,7 @@
         <Label Grid.Row="6" Grid.Column="1" Content="Pathologie :" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="White" />
         <Label Grid.Row="6" Grid.Column="2" x:Name="PathologiePatient" Content="" Background="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
         <Label Grid.Row="7" Grid.Column="1" Content="Date dernière visite :" Background="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
-        <Label Grid.Row="7" Grid.Column="2" x:Name="derniereVisitePatient" Content="" Background="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <DatePicker Grid.Row="7" Grid.Column="2" Background="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
 
         <Grid.RowDefinitions>
             <RowDefinition Height="56.5" />

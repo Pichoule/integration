@@ -15,18 +15,18 @@ using System.Windows.Shapes;
 namespace Plateforme_Gestion_Client
 {
     /// <summary>
-    /// Logique d'interaction pour Window3.xaml
+    /// Logique d'interaction pour Window4.xaml
     /// </summary>
-    public partial class Window3 : Window
+    public partial class Window4 : Window
     {
-        public Window3()
+        public Window4()
         {
             InitializeComponent();
         }
 
-        private void Inscription(object sender, RoutedEventArgs e)
+        private void NouveauMdp(object sender, RoutedEventArgs e)
         {
-            // Enregistrement de l'infirmière en BDD ?
+            // Enregistrement du mdp en BDD ?
         }
     }
 }

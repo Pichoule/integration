@@ -5,17 +5,37 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Plateforme_Gestion_Client"
         mc:Ignorable="d"
-        Title="Infos client" Height="350" Width="500" Background="#FF8A8787">
-    <Grid>
-        <Rectangle Fill="White" HorizontalAlignment="Left" Height="34" Margin="25,23,0,0" Stroke="Black" VerticalAlignment="Top" Width="237"/>
-        <Label x:Name="Infos" Content="Informations sur Mr / Mme ..." HorizontalAlignment="Left" Height="24" Margin="25,23,0,0" VerticalAlignment="Top" Width="224"/>
-        <ListBox HorizontalAlignment="Left" Height="174.59" Margin="117.655,93.86,0,0" VerticalAlignment="Top" Width="251.506">
-            <Label Content="Nom :" Height="29.609" Width="182.223"/>
-            <Label Content="Prénom :" Height="27.361" Width="182.223"/>
-            <Label Content="N°sécu :" Height="27.932" Width="173.102"/>
-            <Label Content="Pathologie :" Height="26.221" Width="182.223"/>
-            <Label Content="Date dernière visite :" Height="22.801" Width="182.223"/>
-        </ListBox>
+        Title="Infos client" Height="Auto" Width="Auto" Background="Gray">
+    <Grid Background="#FFB3B3B3">
+        <Label Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" x:Name="Infos" Content="Informations sur Mr / Mme ..." HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="White" />
+        <Label Grid.Row="3" Grid.Column="1" Content="Nom :" Background="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <Label Grid.Row="3" Grid.Column="2" x:Name="nomPatient" Content="" Background="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <Label Grid.Row="4" Grid.Column="1" Content="Prénom :" Background="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <Label Grid.Row="4" Grid.Column="2" x:Name="prenomPatient" Content="" Background="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <Label Grid.Row="5" Grid.Column="1" Content="N°sécu :" Background="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <Label Grid.Row="5" Grid.Column="2" x:Name="numerSecuPatient" Content="" Background="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <Label Grid.Row="6" Grid.Column="1" Content="Pathologie :" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="White" />
+        <Label Grid.Row="6" Grid.Column="2" x:Name="PathologiePatient" Content="" Background="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <Label Grid.Row="7" Grid.Column="1" Content="Date dernière visite :" Background="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <DatePicker Grid.Row="7" Grid.Column="2" Background="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="56.5" />
+            <RowDefinition Height="57*" />
+            <RowDefinition Height="57*" />
+            <RowDefinition Height="57*" />
+            <RowDefinition Height="57*" />
+            <RowDefinition Height="56*" />
+            <RowDefinition Height="57*" />
+            <RowDefinition Height="56*" />
+            <RowDefinition Height="57*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
 
     </Grid>
 </Window>

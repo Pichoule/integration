@@ -34,7 +34,8 @@ namespace Plateforme_Gestion_Client
 
         private void MdpOublie(object sender, RoutedEventArgs e)
         {
-
+            Window4 wnd4 = new Window4();
+            wnd4.ShowDialog();
         }
 
         private void PageInscription(object sender, RoutedEventArgs e)
@@ -43,5 +44,10 @@ namespace Plateforme_Gestion_Client
             wnd3.ShowDialog();
         }
 
+        private void Affectation_Click(object sender, RoutedEventArgs e)
+        {
+            Window5 wnd5 = new Window5();
+            wnd5.ShowDialog();
+        }
     }
 }

@@ -1,15 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using MySql.Data.MySqlClient;
 
 namespace integrationProjet
 {
     class connexionBDD
     {
-        private MySqlConnection connection;
+        private SqlConnection connection;
 
         public void connectBDD()
         {
@@ -19,7 +20,20 @@ namespace integrationProjet
         public void initConnexion()
         {
             string connectionString = "SERVER=127.0.0.1; DATABASE=integrationprojet; UID=root; PASSWORD=";
-            this.connection = new MySqlConnection(connectionString);
+            this.connection = new SqlConnection(connectionString);
+            try
+            {
+                connection.Open(); // ouverture de la connection
+                var MyAdapter = new SqlDataAdapter("SELECT puis reste de la requete", connection);
+                MyAdapter.Fill(MyDataSet, "NomTable");// dataset rempli avec le resultat du dessus
+                MyDataGrid.DataSource = MyDataSet;// Ici MyDataGrid = le nom du private System.Windows.Forms.DataGrid utilisé
+                MyDataGrid.DataMember = "NomTable";// Ici MyDataGrid = le nom du private System.Windows.Forms.DataGrid utilisé
+                Connection.Close();// fermeture de la connection
+            }
+            catch (MySqlException e)
+            {
+                MessageBox.Show("Erreur SQL:\n" + e.Message, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

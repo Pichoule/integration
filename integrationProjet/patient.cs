@@ -9,7 +9,7 @@ namespace integrationToka.Integrationjenkins
 
     class Patient
     {
-        protected enum Genre { F, M };
+        public enum Genre { F, M };
 
         protected string Nom;
         protected string Prenom;
